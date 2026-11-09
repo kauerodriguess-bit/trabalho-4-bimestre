@@ -24,13 +24,6 @@
     font-size: 17px;
     line-height: 1.55;
   }
-  body {
-    background-color: var(--concreto);
-    color: var(--tinta);
-    font-family: var(--fonte-texto);
-    font-size: 17px;
-    line-height: 1.55;
-  }
   a {
     color: inherit;
   }
@@ -45,4 +38,39 @@
     margin-inline: auto;
     padding-inline: 32px;
   }
+  .topo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 28px;
+      }
   
+  .logo {
+    font-family: var(--fonte-cartaz);
+    font-size: 34px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+  
+  .menu a.atual {
+    border-bottom-color: var(--fita);
+  }
+
+  .menu {
+    display: flex;
+    gap: 36px;
+  }
+  
+  .menu a {
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 4px solid transparent;
+  }
+  .menu a:hover {
+    border-bottom-color: var(--tinta);
+  }
+  
+  .menu a.atual {
+    border-bottom-color: var(--fita);
+  }
